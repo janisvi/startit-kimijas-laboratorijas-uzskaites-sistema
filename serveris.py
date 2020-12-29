@@ -6,7 +6,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Labrīt!"
+    a = 10
+    return "Labrīt!<>$"
+
+@app.route('/sveiki')
+def sveiki():
+  return 'nav rīc'
 
 
 if __name__ == "__main__":
